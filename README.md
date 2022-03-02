@@ -1,1 +1,3 @@
-Tutorial on shell navigation
+#!/bin/bash
+Tutorial on Shell navigation
+
