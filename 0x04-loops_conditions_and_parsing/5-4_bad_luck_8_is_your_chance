@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# While loop with conditions implementation in bash script
+I=1
+while [ $I -lt 11 ]
+do
+	if [ $I -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $I -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	I=$(( I+1 ))
+done
