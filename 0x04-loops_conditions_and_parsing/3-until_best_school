@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+# While loop implementation in bash script
+I=0
+until [ $I -gt 10 ]
+do
+	echo "Best School"
+	I=$(( I+1 ))
+done
