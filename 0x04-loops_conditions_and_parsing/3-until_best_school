@@ -1,8 +1,8 @@
-#!/usr/bin/bash
-# While loop implementation in bash script
-I=0
-until [ $I -gt 10 ]
+#!/usr/bin/env bash
+#Creating a script that uses an until loop
+x=0
+until [ $x -gt 9 ]
 do
 	echo "Best School"
-	I=$(( I+1 ))
+	x=$(( x+1 ))
 done
