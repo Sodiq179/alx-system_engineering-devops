@@ -1,16 +1,8 @@
-!/usr/bin/env bash
-# Script receives kill signal from another script running in another terminal
-# Kill signal is caught and ignored; printing message instead
-
-msg()
-{
-    echo "I am invincible!!!"
-}
-trap "msg" SIGTERM
-
-while true
+#!/usr/bin/env bash
+#Bash script that displays a message when it is terminated
+trap 'echo "I am invincible!!!"' SIGTERM
+while :
 do
-    echo "To infinity and beyond"
-    sleep 2
-
+	echo "To infinity and beyond"
+	sleep 2
 done
