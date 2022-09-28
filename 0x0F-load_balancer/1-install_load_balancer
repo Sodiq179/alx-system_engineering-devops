@@ -6,7 +6,7 @@ CFG="\\\nlisten appname 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption 
 
 sudo apt-get update
 sudo apt-get -y install nginx
-sudo apt-get install -y haproxy=1.5\*
+sudo apt-get install -y haproxy\*
 
 # Make sure HAproxy can be managed via an init script
 sudo sed -i "s/ENABLED=0/ENABLED=1/" /etc/default/haproxy
