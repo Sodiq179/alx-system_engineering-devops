@@ -4,9 +4,11 @@
 
 CFG="\\\nlisten appname 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 8214-web-01 3.238.173.71 check\n\tserver 8214-web-02 44.192.14.82 check\n"
 
-sudo apt-get update
+apt-get -y install software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-2.0
+apt-get -y update
+apt-get -y install haproxy=2.0.\*
 sudo apt-get -y install nginx
-sudo apt-get install -y haproxy\*
 
 # Make sure HAproxy can be managed via an init script
 sudo sed -i "s/ENABLED=0/ENABLED=1/" /etc/default/haproxy
