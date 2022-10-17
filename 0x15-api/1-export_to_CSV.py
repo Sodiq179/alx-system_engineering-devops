@@ -22,15 +22,9 @@ response_message = request_url.read()
 response_message =  json.loads(response_message.decode("utf-8"))
 
 userTotalTodos = []
-doneTasks = []
-
 for userDetails in response_message:
-
 	if userDetails["userId"] == userId:
 		userTotalTodos.append(userDetails)
-
-	if userDetails["userId"] == userId and userDetails["completed"] == True:
-                doneTasks.append(userDetails)
 
 
 def userTodoInfo():
