@@ -37,7 +37,7 @@ def userTodoInfo():
 	"""Gives information about a user todo"""
 	print("Employee {} is done with tasks({}/{}):".format(employeeName,len(doneTasks),len(userTotalTodos)))
 	for userInfo in doneTasks:
-		print("\t{}".format(userInfo["title"]))
+		print("\t {}\n".format(userInfo["title"]))
 
 
 if __name__ == "__main__":
